@@ -1,3 +1,5 @@
+package praticas
+
 fun main (){
     var praticando = praticandoClasses()
 
@@ -60,14 +62,8 @@ fun testCondicoesIf (saldo: Double){
 /// Teste de condicional usando o When, muito parecido com o switch case
 fun testCondicoesWhen (saldo: Double){
     when {
-        saldo > 0 -> {
-            println("Sua conta é positiva")
-        }
-        saldo > 0 -> {
-            println("Sua conta é negativa")
-        }
-        else -> {
-            println("Sua conta está sem saldo")
-        }
+        saldo > 0 -> {println("Sua conta é positiva")}
+        saldo < 0 -> {println("Sua conta é negativa")}
+        else -> {println("Sua conta está sem saldo")}
     }
 }
